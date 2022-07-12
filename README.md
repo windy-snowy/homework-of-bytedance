@@ -1,5 +1,6 @@
 # homework-of-bytedance
 homework1
+
 按顺序打印出APP、ViewControler生命周期的各个事件
 App: 点击程序图标-> 执行main函数-> 通过UIAPPlicationMain函数-> 初始化UIAPPlication对象并且为它设置代理对象->UIApplication对象（重复监听系统事件）->程序结束退出
 UIApplication对象代理：
