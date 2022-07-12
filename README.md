@@ -2,9 +2,12 @@
 homework1
 
 按顺序打印出APP、ViewControler生命周期的各个事件
+
 App: 点击程序图标-> 执行main函数-> 通过UIAPPlicationMain函数-> 初始化UIAPPlication对象并且为它设置代理对象->UIApplication对象（重复监听系统事件）->程序结束退出
+
 UIApplication对象代理：
 applicationDidFinishLaunching(程序载入后)、applicationWillResignActive(将要进入非活动状态)、 applicationDidBecomeActive(程序进入活动状态)、applicationDidEnterBackground(程序进入后台)
+
 ViewControler: alloc/init -> loadView -> viewDidLoad -> viewWillAppear -> viewDidAppear -> viewWillDisappear -> viewDidDisappear ->ealloc   
 
 写出五种常用的UI控件
