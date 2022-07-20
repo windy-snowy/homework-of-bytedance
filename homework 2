@@ -1,28 +1,28 @@
 //swift
 
 class student{
-   var studname: String
-   var mark: Int 
-   var mark2: Int 
+   var name: String
+   var majar: String 
+   var age: Int 
 }
 
-class MarksStruct {
-    var mark: Int
-    init(mark: Int) {
-        self.mark = mark
+class timeStruct {
+    var time: Int
+    init(time: Int) {
+        self.time = time
     }
 }
 
 //objective-c
 
-@interface Box:NSObject {
+@interface Student:NSObject {
    //实例变量
-   double length;    // Length of a box
-   double breadth;   // Breadth of a box
+   NSString name;    
+   NSString majar;
+   int age;
 }
-@property(nonatomic, readwrite) double height;  // Property
+@property(nonatomic, readwrite) float time;  // Property
 
 @end
-
 
 
