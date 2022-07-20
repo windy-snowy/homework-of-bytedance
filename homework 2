@@ -1,0 +1,16 @@
+swift:
+
+class student{
+   var studname: String
+   var mark: Int 
+   var mark2: Int 
+}
+
+class MarksStruct {
+    var mark: Int
+    init(mark: Int) {
+        self.mark = mark
+    }
+}
+
+
