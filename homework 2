@@ -1,4 +1,4 @@
-swift:
+//swift
 
 class student{
    var studname: String
@@ -12,5 +12,17 @@ class MarksStruct {
         self.mark = mark
     }
 }
+
+//objective-c
+
+@interface Box:NSObject {
+   //实例变量
+   double length;    // Length of a box
+   double breadth;   // Breadth of a box
+}
+@property(nonatomic, readwrite) double height;  // Property
+
+@end
+
 
 
