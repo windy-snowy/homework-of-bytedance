@@ -22,8 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)Orders *oldorders;
 // 历史订单 （数组）
 @property (nonatomic, strong)Orders *neworders;
-
 // 未出行订单 （数组）
+@property (nonatomic, assign, readonly) NSInteger neworder_th;
+@property (nonatomic, assign, readonly) NSInteger oldorder_th;
 
 - (instancetype)initWithage:(NSInteger)age oldorders:(Orders * )oldorders neworders:(orders*)neworders;
 - (void)createPassengerWithage:(NSInteger)age oldorders:(Orders * )oldorders neworders:(orders*)neworders;
