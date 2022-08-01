@@ -24,10 +24,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)Orders *neworders;
 // 未出行订单 （数组）
 @property (nonatomic, assign, readonly) NSInteger neworder_th;
+//新订单计数
 @property (nonatomic, assign, readonly) NSInteger oldorder_th;
+//旧订单计数
 
 - (instancetype)initWithage:(NSInteger)age oldorders:(Orders * )oldorders neworders:(orders*)neworders;
 - (void)createPassengerWithage:(NSInteger)age oldorders:(Orders * )oldorders neworders:(orders*)neworders;
+
 // Function 方法
 // 去订票
 -void InOrderswith   date: (NSdate*)date  name :NSString* name;
