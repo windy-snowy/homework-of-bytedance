@@ -30,30 +30,38 @@
 }
 
 -void InOrderswith   date: (NSdate*)date  name :NSString* name{
-    orders * neworderpointer = order_th + self.neworder;
+    orders * neworderpointer = self.neworder_th + self.neworder;
     self.neworderpointer->date = date;
     self.neworderpointer->name = name;
-    self.neworderspointer->have = 1;
-    irder_th++;
+    self.neworderspointer->have = neworderpointer;
+    self.neworder_th++;
 }
 
 -void OutOrderswith date:(NSdate*)date  name :NSString* name{
-    self.neworderpointer->date = 0;
-    self.neworderpointer->name = 0;
-    self.neworderspointer->have =  0;
-    for(NSnumber ;;)
+    
+    for(NSnumber i = 1 ;i <= self.neworder_th;i++)
     {
-        self.neworderpointer->date = date;
-        self.neworderpointer->name = name;
-        self.neworderspointer->have = 1;
+        if( self.neworderpointer->name == name && self.neworderpointer->name == name)
+        {    
+            NSnumber j = i;
+            self.neworderpointer->date = self.next->date;
+            self.neworderpointer->name = self.next->name;
+            self.neworderspointer->have = self.next->have;
+        }
+        else(i>j)
+        {
+            self.neworderpointer->date = self.next->date;
+            self.neworderpointer->name = self.next->name;
+            self.neworderspointer->have = self.next->have;
+        }
     }
-    inorder_th--;
+   self.neworder_th--;
 
-    self.oldorder->date = date;
-    self.oldorder->name = name;
-
-    self.oldorders->have = 0;
-    outorder_th++;
+    orders * oldorderpointer = self.oldorder_th + self.oldorder;
+    self.oldorderpointer->date = date;
+    self.oldorderpointer->name = name;
+    self.oldorderspointer->have = oldorderpointer;
+    self.oldorder_th++;
 }
 
 @end
