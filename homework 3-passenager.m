@@ -20,7 +20,7 @@
     }
     return self;
 }
-
+//构造函数
 - (void)createPassengerWithage:(NSInteger)age oldorders:(Orders * )oldorders neworders:(orders*)neworders {
 
     self.age = age;
@@ -29,6 +29,7 @@
 
 }
 
+//去订票
 -void InOrderswith   date: (NSdate*)date  name :NSString* name{
     orders * neworderpointer = self.neworder_th + self.neworder;
     self.neworderpointer->date = date;
@@ -37,6 +38,7 @@
     self.neworder_th++;
 }
 
+//去检票
 -void OutOrderswith date:(NSdate*)date  name :NSString* name{
     
     for(NSnumber i = 1 ;i <= self.neworder_th;i++)
